@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
+#include "password.h"
 class Password
 {
 private:
@@ -15,15 +16,12 @@ Lenght = lenght;
 char genRandPass()
 {
 
-
-char CON[10] = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '10'};
-
 char random;
 
 srand(time(NULL));
 for(int NumbCount = 0; NumbCount < Lenght; NumbCount++)
 {
-random = rand() % 10;
+random = rand() % 36;
 std::cout << CON[random]; 
 }
 std::cout << std::endl;
