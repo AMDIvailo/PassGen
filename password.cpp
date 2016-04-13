@@ -18,7 +18,7 @@ char genRandPass()
 
 char random;
 
-srand(time(NULL));
+srand(time(NULL)*time(NULL)/3+9);
 for(int NumbCount = 0; NumbCount < Lenght; NumbCount++)
 {
 random = rand() % 36;
